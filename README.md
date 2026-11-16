@@ -41,29 +41,25 @@ StockFlow y Data Quality usan **capturas originales** servidas desde `raw.github
 3. Visita `http://localhost:5500/`.
 4. Revisa escritorio y teléfono, botones ES/EN y filtros de proyecto.
 
-## Publicar gratis con GitHub Pages (sitio personal)
+## Sitio publicado en GitHub Pages
 
-1. En GitHub, haz clic en **New repository** (`https://github.com/new`).
-2. Pon exactamente el nombre **`HenryGonzalezAlguera.github.io`** (mismas mayúsculas del usuario, no es obligatorio pero ayuda a identificarlo). Selecciona **Public**. Crea el repositorio **vacío** (sin README inicial, gitignore ni licencia). **Este repositorio aún no existe y debe crearse desde tu cuenta.**
-3. Descomprime el ZIP y abre PowerShell dentro de la carpeta `henry-dev-portfolio`.
-4. Ejecuta:
+- **Sitio:** https://henrygonzalezalguera.github.io/
+- **Repositorio público:** https://github.com/HenryGonzalezAlguera/HenryGonzalezAlguera.github.io
+- **Rama de publicación:** `main`, raíz `/`.
+- **Comprobación:** [GitHub Actions — Portfolio Static Checks](https://github.com/HenryGonzalezAlguera/HenryGonzalezAlguera.github.io/actions/workflows/portfolio-ci.yml).
+- El despliegue de GitHub Pages se ejecuta automáticamente con los cambios en `main`. Puede tardar unos minutos en reflejar actualizaciones.
 
-   ```powershell
-   git init
-   git branch -M main
-   git add .
-   git commit -m "feat: publish personal developer portfolio v1"
-   git remote add origin https://github.com/HenryGonzalezAlguera/HenryGonzalezAlguera.github.io.git
-   git push -u origin main
-   ```
+### Actualizar la página
 
-5. Abre el repositorio recién creado → **Settings** → **Pages** → **Build and deployment** → **Source: Deploy from a branch** → **Branch: `main` / `(root)`** → **Save**.
-6. GitHub Pages debería ofrecer el sitio en **`https://henrygonzalezalguera.github.io/`** una vez que termine el despliegue. No consideres ese enlace activo hasta comprobarlo en tu navegador.
-7. Cuando esté publicado, agrega el enlace en tu **GitHub Profile**, tu sección **Destacados de LinkedIn** y tus CV.
+Edita `index.html` y los archivos de `assets/` y registra un commit en `main` (directamente desde GitHub o mediante git local). Las pruebas comprueban estructura, enlaces internos y sintaxis del JavaScript. Confirma el resultado en el navegador desde escritorio y móvil.
 
-### Alternativa sin comandos
+### Prueba local
 
-Desde el repositorio nuevo usa **Add file → Upload files** y arrastra `index.html`, la carpeta `assets` y `.nojekyll` desde la carpeta descomprimida, luego **Commit changes**; confirma que `index.html` quede en la raíz (no dentro de una subcarpeta). Después configura GitHub Pages siguiendo el paso 5.
+```powershell
+py -m http.server 5500
+```
+
+Abre http://localhost:5500/ desde la carpeta que contiene `index.html`. No se requiere instalar .NET, Java, Python libraries ni base de datos para usar este portafolio estático.
 
 ## Pendientes opcionales de Fase 7.1
 
