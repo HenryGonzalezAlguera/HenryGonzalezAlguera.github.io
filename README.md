@@ -10,6 +10,7 @@ Sitio personal profesional para presentar proyectos de **C#/.NET**, **Azure**, *
 - Imágenes reales cuando están disponibles y diagramas ilustrativos claramente etiquetados.
 - Metadatos SEO, Open Graph, accesibilidad básica y diseño adaptativo.
 - Enlaces públicos a los cuatro repositorios, demos Azure, GitHub y LinkedIn.
+- CV público descargable en **inglés y español** desde la portada y el pie del sitio; el botón cambia con ES/EN. Las versiones públicas **no muestran teléfono ni correo personal**.
 - No recopila información personal ni envía datos a terceros mediante formularios. Las tipografías de Google Fonts y las capturas servidas desde GitHub son solicitudes externas que puedes quitar si necesitas un sitio 100 % autocontenido.
 
 ## Archivos
@@ -63,7 +64,7 @@ Abre http://localhost:5500/ desde la carpeta que contiene `index.html`. No se re
 
 ## Pendientes opcionales de Fase 7.1
 
-- Añadir un **CV final en PDF** cuando lo preparemos en la fase de CV, y habilitar el botón de descarga.
+- Personalizar el CV publicado por vacante; las versiones específicas para postulaciones se comparten de forma privada y no están alojadas aquí.
 - Incorporar capturas nuevas y anonimizadas de Restaurante.
 - Sustituir las imágenes remotas de StockFlow/Data Quality por archivos locales para una página completamente independiente.
 - Añadir favicon y Open Graph definitivos si cambia el dominio.
